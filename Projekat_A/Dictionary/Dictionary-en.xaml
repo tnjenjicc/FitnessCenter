@@ -1,0 +1,228 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+
+    <System:String x:Key="fitness">Fitness Center</System:String>
+    <System:String x:Key="quote">Your path to a healthier life</System:String>
+    <System:String x:Key="titleStr">Welcome Back!</System:String>
+    <System:String x:Key="logginTxtBlock">Log into your existing account</System:String>
+    <System:String x:Key="enterUsernameBox">Username</System:String>
+    <System:String x:Key="enterPasswordBox">Password</System:String>
+    <System:String x:Key="logginButton">Log in</System:String>
+    <System:String x:Key="createAccountBtn">Create Account</System:String>
+    <System:String x:Key="exitBtn">Exit Application</System:String>
+    <System:String x:Key="darkBlck">Dark Mode</System:String>
+    
+    
+    <System:String x:Key="enableBtn">Enable dark mode</System:String>
+
+    <System:String x:Key="registrationBlck">Register</System:String>
+    <System:String x:Key="reenterPasswordBox">Password confirmation</System:String>
+    <System:String x:Key="emailBox">Email address</System:String>
+    <System:String x:Key="phoneBox">Phone Number</System:String>
+    <System:String x:Key="member">Member</System:String>
+    <System:String x:Key="trainer">Trainer</System:String>
+    <System:String x:Key="group">Group</System:String>
+    <System:String x:Key="nameBox">Name</System:String>
+    <System:String x:Key="surnameBox">Surname</System:String>
+    <System:String x:Key="dateBirthBox">Date of birth</System:String>
+    <System:String x:Key="dateEnrBox">Date of enrollment</System:String>
+    <System:String x:Key="specBox">Specialization</System:String>
+    <System:String x:Key="workTimeBox">Working time</System:String>
+    <System:String x:Key="nameGroupBox">Name</System:String>
+    <System:String x:Key="descriptiobBox">Descriotion</System:String>
+    <System:String x:Key="maxMemberBox">Max number of members</System:String>
+    <System:String x:Key="registerBtn">Register</System:String>
+    <System:String x:Key="cancelBtn">Cancel</System:String>
+
+    <System:String x:Key="OkButton">OK</System:String>
+    <System:String x:Key="successTitle">Success</System:String>
+    <System:String x:Key="infoTitle">Information</System:String>
+    <System:String x:Key="confirmationTitle">Confirmation</System:String>
+    <System:String x:Key="errorTitle">Error</System:String>
+    <System:String x:Key="errorWhileRegister">Error while registration.</System:String>
+    <System:String x:Key="registrationSuccedeed">Successful registration.</System:String>
+    <System:String x:Key="allFieldsRequired">You must fill all fields.</System:String>
+    <System:String x:Key="passwordsDontMatch">Passwords must match.</System:String>
+    <System:String x:Key="badCredentials">Credentials are not valid.</System:String>
+    <System:String x:Key="invalidMaxMembers">The number of members entered is not valid.</System:String>
+    
+    <System:String x:Key="welcome">Welcome,</System:String>
+
+
+    <System:String x:Key="accountType">Account Type</System:String>
+    <System:String x:Key="selectAccountType">Select account type</System:String>
+    <System:String x:Key="memberData">Member Information</System:String>
+    <System:String x:Key="trainerData">Trainer Information</System:String>
+    <System:String x:Key="groupData">Group Information</System:String>
+
+
+    <!--Trener-->
+    <System:String x:Key="reservation">Session reservation</System:String>
+    <System:String x:Key="membership">Memberships</System:String>
+    <System:String x:Key="membershipPayment">Membership payment</System:String>
+    <System:String x:Key="settings">Podešavanja</System:String>
+    <System:String x:Key="shutdown">Shut down</System:String>
+    <System:String x:Key="personalization">Personalization</System:String>
+    <System:String x:Key="viewTrainerAppointment">My appointments</System:String>
+    <System:String x:Key="addAppointment">Add appointment</System:String>
+    <System:String x:Key="viewHalls">Halls</System:String>
+    
+    <!--Sale-->
+    <System:String x:Key="hallId">ID</System:String>
+    <System:String x:Key="hallName">Name</System:String>
+    <System:String x:Key="hallLocation">Location</System:String>
+    <System:String x:Key="hallCapacity">Catacity</System:String>
+    <System:String x:Key="viewDetails">Details</System:String>
+
+
+    <System:String x:Key="addNewSession">Add new session</System:String>
+    <System:String x:Key="sessionDetails">Session details</System:String>
+    <System:String x:Key="sessionDetailsHelp">Help</System:String>
+    <System:String x:Key="selectHall">Select hall</System:String>
+    <System:String x:Key="hallDetails">Details</System:String>
+
+    <System:String x:Key="emptySession">The session cannot be empty!</System:String>
+    <System:String x:Key="sessionNotFound">Session not found!</System:String>
+    <System:String x:Key="sessionUpdated">Session successfully updated!</System:String>
+    <System:String x:Key="updateFailed">An error occurred while updating the session.</System:String>
+    <System:String x:Key="confirmationDelete">Are you sure you want to delete this session?</System:String>
+    <System:String x:Key="sessionDeleted">Session successfully deleted.</System:String>
+    <System:String x:Key="deleteFailed">An error occurred while deleting the session.</System:String>
+    <System:String x:Key="sessionAddedSuccess">Training session successfully added.</System:String>
+    <System:String x:Key="sessionAddFailed">Failed to add training session.</System:String>
+    <System:String x:Key="sessionValidationError">Session has expired or is invalid.</System:String>
+
+
+
+    <System:String x:Key="save">Save</System:String>
+    <System:String x:Key="cancel">Cancel</System:String>
+    <System:String x:Key="search">Search</System:String>
+    <System:String x:Key="hall">Hall</System:String>
+
+    <System:String x:Key="apply">Apply</System:String>
+    <System:String x:Key="resetFilter">Reset filter</System:String>
+    <System:String x:Key="session">Session</System:String>
+
+
+
+    <System:String x:Key="add">Add</System:String>
+    <System:String x:Key="edit">Edit</System:String>
+    <System:String x:Key="delete">Delete</System:String>
+
+
+
+
+
+
+
+
+
+
+    <!--Clan-->
+    <System:String x:Key="availableSession">Available sessions</System:String>
+    <System:String x:Key="Reserved">Reserved</System:String>
+    <System:String x:Key="Available">Available</System:String>
+    <System:String x:Key="Unknown">Unknown</System:String>
+    <System:String x:Key="specialization">Specialization</System:String>
+    <System:String x:Key="myReservations">My Reservations</System:String>
+    <System:String x:Key="reserveBtn">Reserve</System:String>
+    <System:String x:Key="viewMemberships">Memberships</System:String>
+    <System:String x:Key="currentMemberships">Current memberships</System:String>
+    <System:String x:Key="membershipType">Membership type</System:String>
+    <System:String x:Key="price">Price</System:String>
+    <System:String x:Key="expiryDate">Expiry date</System:String>
+    <System:String x:Key="status">Status</System:String>
+    <System:String x:Key="addNewMembership">Add new membership</System:String>
+    <System:String x:Key="selectMembershipType">Select membership type</System:String>
+    <System:String x:Key="membershipAddedSuccess">Membership added successfully!</System:String>
+    <System:String x:Key="membershipAddFailed">Error adding membership.</System:String>
+    <System:String x:Key="active">Active</System:String>
+    <System:String x:Key="expired">Expired</System:String>
+    <System:String x:Key="loadCurrentGroupFailed">Error loading group.</System:String>
+    <System:String x:Key="loadGroupMembersFailed">Error loading group members.</System:String>
+    <System:String x:Key="loadAvailableMembersFailed">Error loading available members.</System:String>
+    <System:String x:Key="memberAddedSuccess">The member was successfully added to the group.</System:String>
+    <System:String x:Key="memberAddedFailed">Error adding member to group. Maybe the pool is full.</System:String>
+    <System:String x:Key="memberAddedFailedUnknown">Unexpected error while adding member.</System:String>
+    <System:String x:Key="memberRemoveSuccess">The member was successfully removed from the group.</System:String>
+    <System:String x:Key="memberRemoveFailed">Error removing member from group.</System:String>
+    <System:String x:Key="memberRemoveFailedUnknown">Unexpected error while removing member.</System:String>
+    <System:String x:Key="totalDebt">Total debt</System:String>
+    <System:String x:Key="unpaidBills">Unpaid bills</System:String>
+    <System:String x:Key="paymentDate">Billing date</System:String>
+    <System:String x:Key="amount">Amount</System:String>
+    <System:String x:Key="paintmentDetails">Paintment details</System:String>
+    <System:String x:Key="paintmentMethod">Payment Method: </System:String>
+    <System:String x:Key="priceInf">Price information: </System:String>
+    <System:String x:Key="originalPrice">Original price: </System:String>
+    <System:String x:Key="finalPrice">Final price: </System:String>
+    <System:String x:Key="availablePromotions">Available promotions: </System:String>
+    <System:String x:Key="discount">Discount: </System:String>
+    <System:String x:Key="validUntil">Valid until: </System:String>
+    <System:String x:Key="pay">Pay</System:String>
+    <System:String x:Key="paid">Paid</System:String>
+    <System:String x:Key="promotionUsed">Promotion used</System:String>
+    <System:String x:Key="amountPaid">Amount paid</System:String>
+    <System:String x:Key="paymentHistory">Payment history</System:String>
+    <System:String x:Key="notLoggedInFailed">User not logged in!</System:String>
+    <System:String x:Key="loadDataFailed">Error loading data.</System:String>
+    <System:String x:Key="loadPromotionsFailed">Error loading promotions.</System:String>
+    <System:String x:Key="calculatePriceFailed">Error calculating price.</System:String>
+    <System:String x:Key="processPaymentFailed">Error processing payment.</System:String>
+    <System:String x:Key="processPaymentFailedUnknown">Unexpected error while processing payment.</System:String>
+    <System:String x:Key="successPayment">Payment processed successfully!</System:String>
+    <System:String x:Key="promo_seasonal">Seasonal discount</System:String>
+    <System:String x:Key="promo_loyalty">Loyalty reward</System:String>
+    <System:String x:Key="promo_offer">Special offer</System:String>
+    <System:String x:Key="promo_monthly">Monthly promotion</System:String>
+    <System:String x:Key="promo_newyear">New year discount</System:String>
+    <System:String x:Key="confirmPaymentTitle">Payment confirmation</System:String>
+    <System:String x:Key="confirmPaymentText">Are you sure you want to process the payment?</System:String>
+    <System:String x:Key="selectMethod">Select payment method</System:String>
+    <System:String x:Key="selectPromotion">Select promotion (optional)</System:String>
+    <System:String x:Key="paymentMethodCash">Cash</System:String>
+    <System:String x:Key="paymentMethodCard">Card</System:String>
+    <System:String x:Key="paymentMethodBankTransfer">Bank Transfer</System:String>
+    <System:String x:Key="paymentMethodOnline">Online Payment</System:String>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Grupa-->
+    <System:String x:Key="viewMembers">Members</System:String>
+    <System:String x:Key="name">Name</System:String>
+    <System:String x:Key="surname">Surname</System:String>
+    <System:String x:Key="birthDate">Date of birth</System:String>
+    <System:String x:Key="remove">Remove</System:String>
+    <System:String x:Key="numOfMembers">Number of members: </System:String>
+    <System:String x:Key="trainerGroup">Trainer: </System:String>
+    <System:String x:Key="addNewMember">Add new member</System:String>
+
+    <System:String x:Key="YesButton">Yes</System:String>
+    <System:String x:Key="NoButton">No</System:String>
+
+
+    <!--Podesavanja-->
+    <System:String x:Key="theme">Theme</System:String>
+    <System:String x:Key="mode">Mode</System:String>
+    <System:String x:Key="font">Font</System:String>
+    <System:String x:Key="blueTheme">Blue</System:String>
+    <System:String x:Key="pinkTheme">Pink</System:String>
+    <System:String x:Key="lightMode">Light</System:String>
+    <System:String x:Key="darkMode">Dark</System:String>
+    <System:String x:Key="ArialFont">Arial</System:String>
+    <System:String x:Key="ComfortaaFont">Comfortaa</System:String>
+    <System:String x:Key="MontserratFont">Montserrat</System:String>
+
+</ResourceDictionary>

@@ -1,0 +1,218 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+    <System:String x:Key="fitness">Fitness Centar</System:String>
+    <System:String x:Key="quote">Vaš put do zdravijeg života</System:String>
+    <System:String x:Key="titleStr">Dobrodošli nazad!</System:String>
+    <System:String x:Key="logginTxtBlock">Prijavi se na postojeći profil</System:String>
+    <System:String x:Key="enterUsernameBox">Korisničko ime</System:String>
+    <System:String x:Key="enterPasswordBox">Lozinka</System:String>
+    <System:String x:Key="logginButton">Prijavi se</System:String>
+    <System:String x:Key="createAccountBtn">Kreiraj nalog</System:String>
+    <System:String x:Key="exitBtn">Napusti aplikaciju</System:String>
+    <System:String x:Key="darkBlck">Tamna tema</System:String>
+    
+    
+    <System:String x:Key="enableBtn">Izaberi tamnu temu</System:String>
+
+    <System:String x:Key="registrationBlck">Registruj se</System:String>
+    <System:String x:Key="reenterPasswordBox">Potvrda lozinke</System:String>
+    <System:String x:Key="emailBox">Email adresa</System:String>
+    <System:String x:Key="phoneBox">Broj telefona</System:String>
+    <System:String x:Key="member">Član</System:String>
+    <System:String x:Key="trainer">Trener</System:String>
+    <System:String x:Key="group">Grupa</System:String>
+    <System:String x:Key="nameBox">Ime</System:String>
+    <System:String x:Key="surnameBox">Prezime</System:String>
+    <System:String x:Key="dateBirthBox">Datum rođenja</System:String>
+    <System:String x:Key="dateEnrBox">Datum upisa</System:String>
+    <System:String x:Key="specBox">Specijalizacija</System:String>
+    <System:String x:Key="workTimeBox">Radno vrijeme</System:String>
+    <System:String x:Key="nameGroupBox">Naziv</System:String>
+    <System:String x:Key="descriptiobBox">Opis</System:String>
+    <System:String x:Key="maxMemberBox">Max broj članova</System:String>
+    <System:String x:Key="registerBtn">Registruj se</System:String>
+    <System:String x:Key="cancelBtn">Odustani</System:String>
+
+
+    <System:String x:Key="OkButton">U redu</System:String>
+    <System:String x:Key="successTitle">Uspješno</System:String>
+    <System:String x:Key="infoTitle">Informacija</System:String>
+    <System:String x:Key="confirmationTitle">Potvrda</System:String>
+    <System:String x:Key="errorTitle">Greška</System:String>
+    <System:String x:Key="errorWhileRegister">Greška pri registraciji.</System:String>
+    <System:String x:Key="registrationSuccedeed">Uspješna registracija.</System:String>
+    <System:String x:Key="allFieldsRequired">Morate popuniti sva polja.</System:String>
+    <System:String x:Key="passwordsDontMatch">Lozinke se ne poklapaju.</System:String>
+    <System:String x:Key="badCredentials">Unijeti kredencijali nisu ispravni.</System:String>
+    <System:String x:Key="invalidMaxMembers">Unijeti broj članova nije ispravan.</System:String>
+    
+    <System:String x:Key="welcome">Dobrodošli,</System:String>
+
+
+
+
+    <System:String x:Key="accountType">Tip naloga</System:String>
+    <System:String x:Key="selectAccountType">Odaberite tip naloga</System:String>
+    <System:String x:Key="memberData">Podaci o članu</System:String>
+    <System:String x:Key="trainerData">Podaci o treneru</System:String>
+    <System:String x:Key="groupData">Podaci o grupi</System:String>
+
+    <!--Trener-->
+    <System:String x:Key="reservation">Rezervacija termina</System:String>
+    <System:String x:Key="membership">Članstvo</System:String>
+    <System:String x:Key="membershipPayment">Naplata članarine</System:String>
+    <System:String x:Key="settings">Podešavanja</System:String>
+    <System:String x:Key="shutdown">Ugasi</System:String>
+    <System:String x:Key="viewTrainerAppointment">Moji termini</System:String>
+    <System:String x:Key="addAppointment">Dodaj termin</System:String>
+    <System:String x:Key="viewHalls">Sale</System:String>
+    <!--Sale-->
+    <System:String x:Key="hallId">ID</System:String>
+    <System:String x:Key="hallName">Naziv</System:String>
+    <System:String x:Key="hallLocation">Lokacija</System:String>
+    <System:String x:Key="hallCapacity">Kapacitet</System:String>
+    <System:String x:Key="viewDetails">Detalji</System:String>
+
+    <System:String x:Key="addNewSession">Dodaj novi termin</System:String>
+    <System:String x:Key="sessionDetails">Detalji termina</System:String>
+    <System:String x:Key="sessionDetailsHelp">Pomoć</System:String>
+    <System:String x:Key="selectHall">Selektuj salu</System:String>
+    <System:String x:Key="hallDetails">Detalji</System:String>
+
+
+    <System:String x:Key="emptySession">Termin ne može biti prazan!</System:String>
+    <System:String x:Key="sessionNotFound">Termin nije pronađen!</System:String>
+    <System:String x:Key="sessionUpdated">Termin uspješno ažuriran!</System:String>
+    <System:String x:Key="updateFailed">Došlo je do greške prilikom ažuriranja termina.</System:String>
+    <System:String x:Key="confirmationDelete">Da li ste sigurni da želite obrisati ovaj termin?</System:String>
+    <System:String x:Key="sessionDeleted">Termin uspješno obrisan.</System:String>
+    <System:String x:Key="deleteFailed">Došlo je do greške prilikom brisanja termina.</System:String>
+    <System:String x:Key="sessionAddedSuccess">Termin treninga je uspješno dodan.</System:String>
+    <System:String x:Key="sessionAddFailed">Dodavanje termina treninga nije uspjelo.</System:String>
+    <System:String x:Key="sessionValidationError">Termin je istekao ili je nevažeći.</System:String>
+
+    <System:String x:Key="save">Sačuvaj</System:String>
+    <System:String x:Key="cancel">Otkaži</System:String>
+    <System:String x:Key="search">Pretraži</System:String>
+    <System:String x:Key="hall">Sala</System:String>
+
+    <System:String x:Key="apply">Sačuvaj</System:String>
+    <System:String x:Key="resetFilter">Resetuj filtere</System:String>
+    <System:String x:Key="session">Termin</System:String>
+
+
+
+    <System:String x:Key="add">Dodaj</System:String>
+    <System:String x:Key="edit">Promijeni</System:String>
+    <System:String x:Key="delete">Obriši</System:String>
+
+
+    
+    
+    
+
+    
+    
+    
+
+    <!--Clan-->
+    <System:String x:Key="availableSession">Dostupni termini</System:String>
+    <System:String x:Key="Reserved">Rezervisano</System:String>
+    <System:String x:Key="Available">Dostupno</System:String>
+    <System:String x:Key="Unknown">Nepoznato</System:String>
+    <System:String x:Key="specialization">Specijalizacija</System:String>
+    <System:String x:Key="myReservations">Moje rezervacije</System:String>
+    <System:String x:Key="reserveBtn">Rezerviši</System:String>
+    <System:String x:Key="currentMemberships">Trenutna članstva</System:String>
+    <System:String x:Key="viewMemberships">Članstva</System:String>
+    <System:String x:Key="membershipType">Tip članstva</System:String>
+    <System:String x:Key="price">Cijena</System:String>
+    <System:String x:Key="expiryDate">Datum isteka</System:String>
+    <System:String x:Key="status">Status</System:String>
+    <System:String x:Key="addNewMembership">Dodaj novo članstvo</System:String>
+    <System:String x:Key="selectMembershipType">Selektovani tip članstva</System:String>
+    <System:String x:Key="membershipAddedSuccess">Članstvo uspješno dodano!</System:String>
+    <System:String x:Key="membershipAddFailed">Greška pri dodavanju članstva.</System:String>
+    <System:String x:Key="active">Aktivno</System:String>
+    <System:String x:Key="expired">Isteklo</System:String>
+    <System:String x:Key="loadCurrentGroupFailed">Greška pri učitavanju grupe.</System:String>
+    <System:String x:Key="loadGroupMembersFailed">Greška pri učitavanju članova grupe.</System:String>
+    <System:String x:Key="loadAvailableMembersFailed">Greška pri učitavanju dostupnih članova.</System:String>
+    <System:String x:Key="memberAddedSuccess">Član je uspješno dodan u grupu.</System:String>
+    <System:String x:Key="memberAddedFailed">Greška pri dodavanju člana u grupu. Možda je grupa puna.</System:String>
+    <System:String x:Key="memberAddedFailedUnknown">Neočekivana greška pri dodavanju člana.</System:String>
+    <System:String x:Key="memberRemoveSuccess">Član je uspješno uklonjen iz grupe.</System:String>
+    <System:String x:Key="memberRemoveFailed">Greška pri uklanjanju člana iz grupe.</System:String>
+    <System:String x:Key="memberRemoveFailedUnknown">Neočekivana greška pri uklanjanju člana.</System:String>
+    <System:String x:Key="totalDebt">Ukupan dug</System:String>
+    <System:String x:Key="unpaidBills">Neplaćeni računi</System:String>
+    <System:String x:Key="paymentDate">Datum naplate</System:String>
+    <System:String x:Key="amount">Iznos</System:String>
+    <System:String x:Key="paintmentDetails">Detalji naplate</System:String>
+    <System:String x:Key="paintmentMethod">Način plaćanja</System:String>
+    <System:String x:Key="priceInf">Informacije o cijeni: </System:String>
+    <System:String x:Key="originalPrice">Originalna cijena: </System:String>
+    <System:String x:Key="finalPrice">Konačna cijena: </System:String>
+    <System:String x:Key="availablePromotions">Dostupne promocije: </System:String>
+    <System:String x:Key="discount">Popust: </System:String>
+    <System:String x:Key="validUntil">Vrijedi do: </System:String>
+    <System:String x:Key="pay">Plati</System:String>
+    <System:String x:Key="paid">Plaćeno</System:String>
+    <System:String x:Key="promotionUsed">Korištena promocija</System:String>
+    <System:String x:Key="amountPaid">Plaćeni iznos</System:String>
+    <System:String x:Key="paymentHistory">Istorija plaćanja</System:String>
+    <System:String x:Key="notLoggedInFailed">Korisnik nije prijavljen!</System:String>
+    <System:String x:Key="loadDataFailed">Greška pri učitavanju podataka.</System:String>
+    <System:String x:Key="loadPromotionsFailed">Greška pri učitavanju promocija.</System:String>
+    <System:String x:Key="calculatePriceFailed">Greška pri izračunavanju cijene.</System:String>
+    <System:String x:Key="processPaymentFailed">Greška pri obradi plaćanja.</System:String>
+    <System:String x:Key="processPaymentFailedUnknown">Neočekivana greška prilikom obrade plaćanja.</System:String>
+    <System:String x:Key="successPayment">Plaćanje uspješno obrađeno!</System:String>
+    <System:String x:Key="promo_seasonal">Sezonski popust</System:String>
+    <System:String x:Key="promo_loyalty">Nagrada za lojalnost</System:String>
+    <System:String x:Key="promo_offer">Specijalna ponuda</System:String>
+    <System:String x:Key="promo_monthly">Mjesečna promocija</System:String>
+    <System:String x:Key="promo_newyear">Novogodišnji popust</System:String>
+    <System:String x:Key="confirmPaymentTitle">Potvrda plaćanja</System:String>
+    <System:String x:Key="confirmPaymentText">Da li ste sigurni da želite obraditi plaćanje?</System:String>
+    <System:String x:Key="selectMethod">Izaberi način plačanja</System:String>
+    <System:String x:Key="selectPromotion">Izaberi promociju (opciono)</System:String>
+    <System:String x:Key="paymentMethodCash">Gotovina</System:String>
+    <System:String x:Key="paymentMethodCard">Kartica</System:String>
+    <System:String x:Key="paymentMethodBankTransfer">Bankovni transfer</System:String>
+    <System:String x:Key="paymentMethodOnline">Online plaćanje</System:String>
+
+
+
+
+
+
+
+    <!--Grupa-->
+    <System:String x:Key="viewMembers">Članovi</System:String>
+    <System:String x:Key="name">Ime</System:String>
+    <System:String x:Key="surname">Prezime</System:String>
+    <System:String x:Key="birthDate">Datum rođenja</System:String>
+    <System:String x:Key="remove">Ukloni</System:String>
+    <System:String x:Key="numOfMembers">Broj članova: </System:String>
+    <System:String x:Key="trainerGroup">Trener: </System:String>
+    <System:String x:Key="addNewMember">Dodaj novog člana</System:String>
+
+    <System:String x:Key="YesButton">Da</System:String>
+    <System:String x:Key="NoButton">Ne</System:String>
+    
+
+    <!--Podesavanja-->
+    <System:String x:Key="theme">Tema</System:String>
+    <System:String x:Key="mode">Mod</System:String>
+    <System:String x:Key="font">Font</System:String>
+    <System:String x:Key="blueTheme">Plava</System:String>
+    <System:String x:Key="pinkTheme">Roza</System:String>
+    <System:String x:Key="lightMode">Svijetli</System:String>
+    <System:String x:Key="darkMode">Tamni</System:String>
+    <System:String x:Key="ArialFont">Arial</System:String>
+    <System:String x:Key="ComfortaaFont">Comfortaa</System:String>
+    <System:String x:Key="MontserratFont">Montserrat</System:String>
+
+</ResourceDictionary>

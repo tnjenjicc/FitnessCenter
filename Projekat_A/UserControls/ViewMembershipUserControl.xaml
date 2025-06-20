@@ -1,0 +1,195 @@
+﻿<UserControl x:Class="Projekat_A.UserControls.ViewMembershipUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projekat_A.UserControls"
+             xmlns:util="clr-namespace:Projekat_A.Util"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.Resources>
+        <util:DateOnlyToDateTimeConverter x:Key="DateOnlyToDateTimeConverter"/>
+        <util:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <Style x:Key="CenteredColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#F0F0F0" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+
+        <Style x:Key="CenteredCellStyle" TargetType="{x:Type DataGridCell}">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                        <Border Padding="{TemplateBinding Padding}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CenteredTextBlockStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Naslov -->
+        <TextBlock Grid.Row="0" 
+                   Text="{DynamicResource viewMemberships}" 
+                   FontSize="32"
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center"
+                   Style="{StaticResource MaterialDesignHeadline4TextBlock}" 
+                   Margin="16"/>
+
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Lista clanstava -->
+            <materialDesign:Card Grid.Column="0" Margin="16,0,8,16">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" 
+                               Text="{DynamicResource currentMemberships}" 
+                               Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                               FontSize="18"
+                               Margin="16,16,16,8"/>
+
+                    <DataGrid Grid.Row="1"
+                              ItemsSource="{Binding Memberships}"
+                              SelectedItem="{Binding SelectedMembership}"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              Margin="16,8,16,16"
+                              HorizontalAlignment="Stretch"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled"
+                              HeadersVisibility="Column"
+                              BorderThickness="1" 
+                              BorderBrush="#CCCCCC"
+                              ColumnWidth="SizeToHeader"
+                              ColumnHeaderStyle="{StaticResource CenteredColumnHeaderStyle}"
+                              CellStyle="{StaticResource CenteredCellStyle}"
+                              ScrollViewer.CanContentScroll="True"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="{DynamicResource membershipType}"
+                                                Binding="{Binding MembershipTypeName}"
+                                                Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CenteredTextBlockStyle}"/>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="{DynamicResource price}"
+                                                Binding="{Binding Price, StringFormat='{}{0:F2}'}"
+                                                Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CenteredTextBlockStyle}"/>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="{DynamicResource expiryDate}"
+                                                Binding="{Binding ExpirationDate, StringFormat='{}{0:dd.MM.yyyy.}'}"
+                                                Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CenteredTextBlockStyle}"/>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="{DynamicResource status}"
+                                                Binding="{Binding Status}"
+                                                Width="*">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CenteredTextBlockStyle}"/>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </materialDesign:Card>
+
+            <!-- Panel za dodavanje clanstva -->
+            <materialDesign:Card Grid.Column="1" 
+                                Margin="8,0,16,16" 
+                                Width="300"
+                                Visibility="{Binding IsAddingMembership, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" 
+                               Text="{DynamicResource addNewMembership}" 
+                               Style="{StaticResource MaterialDesignHeadline6TextBlock}" 
+                               FontSize="18"
+                               Margin="0,0,0,16"/>
+
+                    <ComboBox Grid.Row="1"
+                              materialDesign:HintAssist.Hint="{DynamicResource selectMembershipType}"
+                              ItemsSource="{Binding MembershipTypes}"
+                              SelectedItem="{Binding SelectedMembershipType}"
+                              DisplayMemberPath="Name"
+                              Margin="0,8,0,16"/>
+
+                    <DatePicker Grid.Row="2"
+                                materialDesign:HintAssist.Hint="{DynamicResource expiryDate}"
+                                SelectedDate="{Binding SelectedExpirationDate, Converter={StaticResource DateOnlyToDateTimeConverter}}"
+                                Style="{StaticResource MaterialDesignOutlinedDatePicker}"
+                                Margin="0,0,0,16"/>
+
+                    <StackPanel Grid.Row="3" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right" 
+                                Margin="0,16,0,0">
+                        <Button Style="{StaticResource MaterialDesignOutlinedButton}" 
+                                Command="{Binding CancelAddCommand}" 
+                                Content="{DynamicResource cancel}" 
+                                Margin="0,0,8,0"/>
+                        <Button Style="{StaticResource MaterialDesignRaisedButton}" 
+                                Command="{Binding SaveMembershipCommand}" 
+                                Content="{DynamicResource save}"/>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+        </Grid>
+
+        <!-- Dugme za dodavanje novog clanstva -->
+        <Button Grid.Row="2" 
+                HorizontalAlignment="Right" 
+                Style="{StaticResource MaterialDesignFloatingActionButton}" 
+                Command="{Binding ShowAddMembershipCommand}"
+                Visibility="{Binding IsAddingMembership, Converter={StaticResource InverseBooleanToVisibilityConverter}}"
+                Margin="0,0,16,16">
+            <materialDesign:PackIcon Kind="Plus" Height="24" Width="24"/>
+        </Button>
+    </Grid>
+</UserControl>
